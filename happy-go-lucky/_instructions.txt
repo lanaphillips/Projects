@@ -1,0 +1,35 @@
+
+Hi website updator. You are Totaly awesome for reading this.
+So here's some instructions to keeping this website AWESOME!
+
+1) Please, please, please put items where they belong. All
+   photos belong in the images folder. Seriously, ALL of them.
+   If you want to get organized in the images folder, make a
+   folder inside of images. 
+
+   EX: images > testimonials > imagename.jpg
+
+2) If you have something you're working on, like a testimonials
+   page update, place it in the workdesk folder. If you want to
+   check it out on your site, go to...
+
+   happygoluckypetcare.com/workdesk/pagename.html
+
+3) If you update your page and something looks broken, go to
+   http://validator.w3.org/#validate_by_upload. If you 
+   know anything about html, this will tell you what's 
+   broken and where. Also, check the css!
+
+4) DO NOT use microsoft word to update your website! Use a text
+   editor like textmate or notepad (windows). Better yet,
+   use Sublime Text. It's free!
+
+   http://www.sublimetext.com/
+
+5) Optimize your images! File size on photos is super important,
+   and can make the difference between a photo taking a split-second
+   to load, or a second or two. I don't recommend using gifs.
+   Use a .png (maintains transparency) or .jpg/.jpeg and run them through...
+
+   http://jpegmini.com/
+   http://tinypng.org/

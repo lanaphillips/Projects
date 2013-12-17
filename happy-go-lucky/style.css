@@ -1,0 +1,472 @@
+@import url(fonts/aleo/stylesheet.css); /* font-family: 'aleobold', sans-serif; */
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {line-height:1;}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+nav ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+del {text-decoration: line-through;}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {vertical-align:middle;}
+
+
+
+#header:after, .wrapper:after,
+#footer:after{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+a{
+    color: #333;
+    text-decoration: underline;
+}
+.brown{color: #7D4622;}
+.blue{color: #578FB0;}
+.pageimg{border: 4px solid #7D4622}
+p{
+    padding: 0 0 15px;
+}
+.button, a.button{
+    display: block;
+    width: 100%; max-width: 175px;
+    text-align: center;
+    color: #fff;
+    background: #C4711E;
+    padding: 3px;
+    text-decoration: none;
+    font-family: "trebuchet MS";
+}
+#back-to-top{
+    display: block;
+    width: 93px; height: 25px;
+    background: url(images/backtotop.gif) no-repeat 0 0;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+.listing > li{
+    list-style-type: none;
+    border-top: 1px solid #999;
+    padding: 15px;
+}
+.listing > li:first-child{border-top: 0;}
+.listing li ul{margin-bottom: 10px;}
+.listing li li{
+    list-style-type: disc;
+    margin-left: 15px;
+}
+
+#main.full{
+    width: 738px;
+    border: 1px solid #999;
+    background: #fff;
+    overflow: hidden;
+}
+img{max-width: 98%;}
+
+/*
+ * Base Styles
+ * ===========
+ * Body, Wrapper, Main, Aside, Header
+**/
+
+    /*
+     * Body
+    **/
+
+    body{
+        background: url(images/bg.gif) repeat #96CAE0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #333;
+        font-size: 12px;
+        line-height: 1.5em;
+    }
+
+    /*
+     * Wrapper
+    **/
+
+    body > .wrapper{
+        width: auto;
+        max-width: 740px;
+        padding: 1px 10px 0;
+        margin: 0 auto;
+    }
+    body > .wrapper > .wrapper{ /* To clear the space between wrapper and header */
+        width: 100%;
+        position: relative;
+        z-index: 5;
+        margin-top: -1px;
+    }
+
+    /* 
+     * Main/Aside
+    **/
+    #main, #aside{
+        display: block;
+        min-height: 700px;
+    }
+
+    /*
+     * Header
+    **/
+
+    #header{
+        height: 179px;
+        position: relative;
+        margin-top: 25px;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+        /* Logo */
+        #header #logo{
+            width: 194px; height: 157px;
+            padding: 10px 12px;
+            background: #fff;
+            border-style: solid;
+            border-color: #999;
+            border-width: 1px 1px 0 1px;
+            margin-right: 10px;
+            float: left;
+        }
+        #header #logo .logo-text{
+            display: block;
+            width: 100%; height: 0;
+            padding-bottom: 68%;
+            background: url(images/logo.gif) no-repeat center center;
+            text-indent: -9999px;
+            border-bottom: 1px solid #ccc;
+        }
+        #header #logo .phone-number{
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            font-size: 13px;
+            padding-top: 5px;
+        }
+        #header #logo .phone-number a{text-decoration: none;}
+
+        /* Nav */
+        #header #nav{
+            width: 488px;
+            padding: 10px;
+            border-style: solid;
+            border-color: #999;
+            border-width: 1px 1px 0 1px;
+            float: right;
+            background: #fff;
+            text-align: center;
+        }
+        #header #nav li{
+            display:-moz-inline-stack;
+            display:inline-block;
+            zoom:1;
+            *display:inline;
+        }
+        #header #nav li a{
+            display: block;
+            color: #83B1C4;
+            font-family: "trebuchet MS", serif;
+            font-size: 16px;
+            letter-spacing: -1px;
+            padding: 15px 13px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #header #nav li a:hover{
+            color: #fff;
+            background: #764927;
+        }
+
+        /* Page Title */
+        #header #page-title{
+            width: 488px; height: 32px;
+            padding: 61px 10px 15px 10px;
+            float: right;
+            color: #cf6d1a;
+            font-family: 'aleobold', sans-serif;
+            font-size: 32px;
+            border: 1px solid #999;
+            line-height: 1em;
+            background: url(images/white-transparency.png) repeat;
+        }
+
+    /*
+     * Footer
+    **/
+    #footer{text-align: right;}
+
+    /*
+     * Pages
+     * ===========
+     * Home, Services, FAQ, Testimonials, About, Contact
+    **/
+
+        /*
+         * Home
+        **/
+        body.home #aside{
+            width: 194px;
+            padding: 10px 12px;
+            border-style: solid;
+            border-color: #999;
+            border-width: 0 1px 1px 1px;
+            margin-right: 10px;
+            float: left;
+            background: #fff;
+        }
+        body.home #main{
+            width: 488px;
+            padding: 10px;
+            border-style: solid;
+            border-color: #999;
+            border-width: 0 1px 1px 1px;
+            float: right;
+            background: #fff;
+        }
+
+        body.home #aside .links li{
+            width: auto;
+            margin: 0 10px 15px;
+            list-style: none;
+        }
+
+        /*
+         * Services
+        **/
+        body.services #header #page-title{border-bottom: 0;}
+        body.services .listing article{position: relative;}
+        body.services .listing article h2{
+            color: #7D4622;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+        body.services .listing article figure{
+            width: 120px;
+            position: absolute;
+            top: 30px; left: 0;
+            text-align: center;
+        }
+        body.services .listing .has-figure article .details{
+            min-height: 74px;
+            margin-left: 130px;
+        }
+
+        /*
+         * FAQ
+        **/
+        body.faq h1 span{font-size: 24px;}
+        body.faq #header #page-title{border-bottom: 0;}
+        body.faq .listing article h2{
+            color: #7D4622;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+
+        /*
+         * Testimonials
+        **/
+        body.testimonials #header #page-title{border-bottom: 0;}
+        body.testimonials .listing li.friday-madix,
+        body.testimonials .listing li.rocket-and-spencer{min-height: 200px;}
+        body.testimonials .listing li.levi-paige-riley{min-height: 150px;}
+        body.testimonials .listing article{position: relative;}
+        body.testimonials .listing article figure{
+            width: 150px;
+            position: absolute;
+            top: 0; left: 0;
+            text-align: center;
+        }
+        body.testimonials .listing .has-figure article .details{
+            margin-left: 160px;
+        }
+
+        /*
+         * About
+        **/
+        body.about #header #page-title{border-bottom: 0;}
+        body.about #main{min-height: 0;}
+        body.about #main article{padding: 15px;}
+        body.about #main article figure{
+            float: left;
+            margin: 0 15px 15px 0;
+        }
+
+        /*
+         * Contact
+        **/
+        body.contact #aside{
+            width: 194px;
+            min-height: 380px;
+            padding: 10px 12px 15px;
+            border-style: solid;
+            border-color: #999;
+            border-width: 0 1px 1px 1px;
+            margin-right: 10px;
+            float: left;
+            background: #fff;
+        }
+        body.contact #main{
+            width: 478px;
+            min-height: 380px;
+            padding: 15px 15px 10px;
+            border-style: solid;
+            border-color: #999;
+            border-width: 0 1px 1px 1px;
+            float: right;
+            background: #fff;
+        }
+
+
+@media screen and (max-width:780px){
+
+    body > .wrapper > .wrapper{margin-top: 0;}
+    #main.full{
+        width: 99%;
+    }
+
+    /*
+     * Header
+    **/
+    #header{height: auto;}
+    #header #logo,
+    #header #nav,
+    #header #page-title{
+        width: 97%;
+        border-width: 1px 1px 0 1px;
+        float: left;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin: 0;
+    }
+
+        /* Logo */
+        #header #logo .logo-text{
+            height: 132px;
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+
+        /* Page Title */
+        #header #page-title{
+            width: 93%;
+            height: auto;
+            padding: 15px 3%;
+        }
+    
+
+    /*
+     * Pages
+     * ===========
+     * Home, Services, FAQ, Testimonials, About, Contact
+    **/
+
+        /*
+         * Home, Contact
+        **/
+        body.home #aside,
+        body.home #main,
+        body.contact #aside,
+        body.contact #main{
+            width: 95%;
+            padding: 10px 2%;
+            float: left;
+            min-height: 0;
+        }
+        body.home #aside,
+        body.contact #aside{border-top: 1px solid #999;}
+
+        body.home #aside .faq-banner,
+        body.home #aside .testimonials-banner{display: none;}
+        body.home #aside .links li{margin-left: 0;}
+        body.home #aside .links li:last-child{margin-bottom: 0;}
+
+        /*
+         * Services
+        **/
+        body.services .listing article figure{width: 80px;}
+        body.services .listing .has-figure article .details{margin-left: 90px;}
+
+        /*
+         * Testimonials
+        **/
+        body.testimonials .listing article figure{width: 80px;}
+        body.testimonials .listing .has-figure article .details{margin-left: 90px;}
+
+
+}
+
+
