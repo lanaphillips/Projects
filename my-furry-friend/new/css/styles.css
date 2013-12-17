@@ -1,0 +1,384 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Clearfix */
+#content:after,
+.clearfix:after{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.inline > * {
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
+
+
+/**************************/
+/* My Furry Friend Styles */
+/**************************/
+
+/*
+ * Base Styles
+ * =============
+ * Body, Links, Typography, Wrapper, Content
+**/
+
+	/* Body */
+	body {
+		background: #fff;
+		margin-top: -1px;
+		padding-top: 1px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+	}
+
+	/* Links */
+	a { color: #000; }
+
+	/* Typography */
+	em { font-style: italic; }
+	strong { font-weight: bold; }
+	.underline { text-decoration: underline; }
+
+	/* Wrapper */
+	.wrapper {
+		margin: 20px auto 40px;
+		width: 100%;
+		max-width: 750px;
+		background: #fff;
+	}
+
+	/* Content */
+	#content { overflow: hidden; }
+	aside, main {
+		padding-bottom: 9999px;
+		margin-bottom: -9999px;
+	}
+
+	
+/*
+ * Header
+**/
+header { border: 2px solid #939FAF; }
+
+	/* Logo */
+	#header #logo {
+		margin: 3px auto;
+		width: 100%;
+		max-width: 212px;
+	}
+	#header #logo a {
+		display: block;
+		width: 100%; height: 0;
+		padding-bottom: 61.5%;
+		background: url(../img/logo2.jpg) no-repeat center center;
+		text-indent: -9999px;
+	}
+
+/* 
+ * Sidebar
+**/
+aside {
+	width: 125px;
+	float: left;
+	border-right: 2px solid #939FAF;
+	border-left: 2px solid #939FAF;
+}
+
+	/* Nav */
+	aside nav li{ width: 100%; }
+	aside nav li a { 
+		display: block;
+		padding: 6px 0;
+		width: 100%; height: 75px;
+		text-indent: -9999px;
+		border-bottom: 1px dotted #939FAF;
+	}
+	aside nav li.home a { background: url(../img/btn_home.jpg) no-repeat center center; }
+	aside nav li.services a { background: url(../img/btn_services.jpg) no-repeat center center; }
+	aside nav li.behavior a { background: url(../img/btn_behavior.jpg) no-repeat center center; }
+	aside nav li.about a { background: url(../img/btn_about.jpg) no-repeat center center; }
+	aside nav li.contact a { background: url(../img/btn_contact.jpg) no-repeat center center; }
+	aside nav li.links a { background: url(../img/btn_links.jpg) no-repeat center center; }
+
+
+/*
+ * Main
+**/
+main {
+	width: 619px;
+	float: right;
+	border-right: 2px solid #939FAF;
+}
+
+	/* Article */
+	main article { padding: 12px; }
+	main article p { 
+		padding: 8px 0; 
+		line-height: 1.3;
+	}
+	main article li { line-height: 1.3; }
+	main #back-to-top {
+		display: block;
+		margin: 15px 0;
+		padding: 10px 5px 6px 32px;
+		background: url(../img/backtotop.jpg) no-repeat 0 0;
+		text-decoration: none;
+		font-size: 11px;
+	}
+	main article h1 {
+		display: block;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	main article h1 span {
+		display: block;
+		width: 100%; height: 0;
+		text-indent: -9999px;
+		background-size: 100% auto !important;
+	}
+	main article ul { margin-bottom: 15px; }
+
+		/* Home Page */
+		.home main article { text-align: center; }
+		.home h1 { 
+			margin: 70px auto 20px;
+			max-width: 408px;
+		}
+		.home h1 span {
+			padding-bottom: 15.19%;
+			background: url(../img/title_home.jpg) no-repeat 0 0;
+		}
+		.home p span {
+			display:-moz-inline-stack;
+			display:inline-block;
+			zoom:1;
+			*display:inline;
+			padding: 2px 10px;
+			color: #939FAF;
+			font-weight: bold;
+		}
+		.home p .basket { margin: 40px 0 20px; }
+
+		/* Services */
+		.services h1 { max-width: 140px; }
+		.services h1 span{
+			padding-bottom: 35.71%;
+			background: url(../img/title_services.jpg) no-repeat 0 0;
+		}
+
+		/* Behavior */
+		.behavior h1 { max-width: 142px; }
+		.behavior h1 span{
+			padding-bottom: 39.43%;
+			background: url(../img/title_behavior.jpg) no-repeat 0 0;
+		}
+		.behavior article ul {
+			margin: 0 1% 10px 0;
+			width: 32.33%;
+			float: left;
+		}
+
+		/* About */
+		.about h1 { max-width: 104px; }
+		.about h1 span {
+			padding-bottom: 48.07%;
+			background: url(../img/title_about.jpg) no-repeat 0 0;
+		}
+
+		/* Links */
+		.links h1 { max-width: 100px; }
+		.links h1 span {
+			padding-bottom: 50%;
+			background: url(../img/title_links.jpg) no-repeat 0 0;
+		}
+		.links article a { color: #939FAF; }
+
+
+		/* Contact */
+		.contact h1 { max-width: 184px; }
+		.contact h1 span {
+			padding-bottom: 27.17%;
+			background: url(../img/title_contact.jpg) no-repeat 0 0;
+		}
+		.contact form {
+			margin-top: 5px;
+			border-top: 1px dashed #000;
+		}
+		.contact form > ul > li {
+			margin-bottom: 1px;
+			width: 100%;
+			padding: 10px 0;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+		}
+		.contact form li.name { margin-bottom: 5px; }
+		.contact form > ul > li > label,
+		.contact form li.name label { display: block; }
+		.contact form .required > label { 
+			margin-bottom: 3px;
+			font-weight: bold; 
+		}
+		.contact form .required > label:before {
+			content: "*";
+			color: #C15D4D;
+		}
+		.contact form input.text,
+		.contact form textarea {
+			padding: 5px;
+			width: 100%;
+			max-width: 400px;
+			border: 1px solid #ccc;
+			-webkit-appearance: none;
+			-webkit-border-radius: 3px;
+			   -moz-border-radius: 3px;
+			        border-radius: 3px;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+		}
+		.contact form .inline input { max-width: 55px; }
+		.contact form .button {
+			padding: 4px 7px;
+			background: #899945;
+			border: 1px solid #899945;
+			color: #FFFFFF;
+		}
+
+/*
+ * Footer
+**/
+footer {
+	position: relative;
+	border: 2px solid #939FAF;
+	text-align: center;
+}
+
+	/* Nav */
+	footer nav li {
+		display:-moz-inline-stack;
+		display:inline-block;
+		zoom:1;
+		*display:inline;
+		padding: 5px;
+	}
+
+	/* Legal */
+	footer .legal {
+		position: absolute;
+		top: 100%;
+		padding: 8px 0 0;
+		width: 100%;
+		color: #6C7F92;
+		font-size: 10px;
+	}
+
+
+
+@media screen and (max-width:750px){
+
+	body { padding: 1px 10px; }
+	
+	aside,
+	main {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		width: auto;
+		float: none;
+		border-left: 2px solid #939FAF;
+	}
+	main { border-top: 2px solid #939FAF;}
+
+	/* Aside */
+
+		/* Nav */
+		aside nav { 
+			padding: 5px 0;
+			text-align: center; 
+		}
+		aside nav li { 
+			display: -moz-inline-stack;
+			display: inline-block;
+			zoom: 1;
+			*display: inline;
+			width: auto; height: auto;
+			line-height: 1;
+		}
+		aside nav li a {
+			padding: 5px 10px !important;
+			width: auto; height: auto;
+			background: none !important;
+			font-size: 14px;
+			text-transform: uppercase;
+			text-indent: 0;
+			border-bottom: 0;
+			text-decoration: none;
+		}
+
+	/* Main */
+
+		/* Consult Page */
+		.consult article ul {
+			width: 99%;
+		}
+
+}
+
+
+
+
+

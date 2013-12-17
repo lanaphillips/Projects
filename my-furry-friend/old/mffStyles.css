@@ -1,0 +1,101 @@
+body {
+	margin: 0px;
+}
+.pageContainer {
+	border: 2px solid #939FAF;
+}
+.header {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #939FAF;
+}
+.footer {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #939FAF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	padding: 7px;
+}
+.footer A:link, .footer A:visited, .footer A:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding: 6px;
+	color: #000000;
+	text-decoration: underline;
+}
+.footer A:hover, .footer A:focus {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding: 6px;
+	text-decoration: none;
+}
+.content {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#000000;
+	padding: 14px;
+}
+.content A:link, .content A:visited, .content A:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#939FAF;
+	text-decoration:underline;
+}
+#contactForm {
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #000000;
+}
+.formButtons {
+	background-color: #899945;
+	border: 1px solid #899945;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	padding: 4px;
+}
+
+
+.content A:hover, .content A:focus {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#939FAF;
+	text-decoration:none;
+}
+.nav {
+	border-right-width: 2px;
+	border-right-style: solid;
+	border-right-color: #939FAF;
+}
+.redasterisk {
+	color: #C15D4D;
+}
+
+.navcell {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #899945;
+}
+.underline {
+	text-decoration: underline;
+}
+.copyright {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #6C7F92;
+	padding-top:4px;
+}
+.copyright A:link, .copyright A:visited, .copyright A:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #6C7F92;
+	text-decoration:underline;
+}
+.copyright A:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	text-decoration:none;
+}
