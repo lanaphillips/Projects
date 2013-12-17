@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+.clearfix {
+	clear:both !important;
+	line-height:0px !important;
+}
+.navbar .nav {
+	margin-left:0px !important;
+}
+#footer_right, #footer_left, #footer_center {
+	display:block;
+}
+#footer_center #footer_ctop {
+	margin-left:66px;
+}
+.fnavend {
+	background-image:none !important;
+}
+.fbtn5 {
+	margin-left:108px;
+}
