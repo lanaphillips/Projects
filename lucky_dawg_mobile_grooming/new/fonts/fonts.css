@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'steelfish_outlineregular';
+    src: url('steelfish_outline-webfont.eot');
+    src: url('steelfish_outline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('steelfish_outline-webfont.woff') format('woff'),
+         url('steelfish_outline-webfont.ttf') format('truetype'),
+         url('steelfish_outline-webfont.svg#steelfish_outlineregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'steelfish_rgitalic';
+    src: url('steelfish_rg_it-webfont.eot');
+    src: url('steelfish_rg_it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('steelfish_rg_it-webfont.woff') format('woff'),
+         url('steelfish_rg_it-webfont.ttf') format('truetype'),
+         url('steelfish_rg_it-webfont.svg#steelfish_rgitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'steelfish_rgregular';
+    src: url('steelfish_rg-webfont.eot');
+    src: url('steelfish_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('steelfish_rg-webfont.woff') format('woff'),
+         url('steelfish_rg-webfont.ttf') format('truetype'),
+         url('steelfish_rg-webfont.svg#steelfish_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+	
+@font-face {
+    font-family: 'myriad_probold';
+    src: url('myriadpro-bold-webfont.eot');
+    src: url('myriadpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('myriadpro-bold-webfont.woff') format('woff'),
+         url('myriadpro-bold-webfont.ttf') format('truetype'),
+         url('myriadpro-bold-webfont.svg#myriad_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'myriad_proitalic';
+    src: url('myriadpro-it-webfont.eot');
+    src: url('myriadpro-it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('myriadpro-it-webfont.woff') format('woff'),
+         url('myriadpro-it-webfont.ttf') format('truetype'),
+         url('myriadpro-it-webfont.svg#myriad_proitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'myriad_proregular';
+    src: url('myriadpror-webfont.eot');
+    src: url('myriadpror-webfont.eot?#iefix') format('embedded-opentype'),
+         url('myriadpror-webfont.woff') format('woff'),
+         url('myriadpror-webfont.ttf') format('truetype'),
+         url('myriadpror-webfont.svg#myriad_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

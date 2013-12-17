@@ -1,0 +1,5 @@
+$(function(){
+
+	$('#appointment-btn').fancybox();
+
+});
