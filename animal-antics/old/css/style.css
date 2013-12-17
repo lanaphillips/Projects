@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700);
+@font-face {
+    font-family: 'market_decoregular';
+    src: url('../includes/market_deco-webfont.eot');
+    src: url('../includes/market_deco-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../includes/market_deco-webfont.woff') format('woff'),
+         url('../includes/market_deco-webfont.ttf') format('truetype'),
+         url('../includes/market_deco-webfont.svg#market_decoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+a {text-decoration:underline;color:#A34029;}
+a:hover {color:#654F3C;}
+h1,h2,h3,h4,h5,h6 {font-weight:normal;}
+h1,h2,h3,h4,h5,h6, #headcont, #headcont #contactcont #headfrmcont #headsubmit, #footercont, .pgcontent .topbtn a, #register #regsubmit {font-family:'market_decoregular', Helvetica, sans-serif;}
+body, .pgcontent h5, .pgcontent h4 {font-family: 'PT Sans', sans-serif;}
+#picbg { 
+  background: url(../img/pgbg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pgbg.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pgbg.jpg', sizingMethod='scale')";
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+#pgcont {width:960px;margin:0 auto;padding-top:10px;color:#654F3C;font-size:14px;}
+#headcont {border-bottom:12px solid #a34029;margin:0;background:#FFF;}
+#headcont .span3 {width:318px;margin:0;height:270px;}
+#headcont #logocont {border-left:1px solid #7AA5B2;border-top:1px solid #7AA5B2;padding-right:2px;text-align:center;}
+#headcont #logocont a {margin-top:40px;display:block;}
+#headcont #menucont {border:1px solid #a34029;border-bottom:none;border-right:none;background:#654F3C;padding-right:1px;}
+#headcont #menucont ul {list-style:none;margin:0;padding:17px 0 33px 0;}
+#headcont #menucont ul li {padding:4px 33px 0 33px;height:23px;}
+#headcont #menucont ul li:hover {background:#c9c2bb;}
+#headcont #menucont ul li a {color:#FFF;text-decoration:none;font-size:16px;text-transform:uppercase;display:block;}
+#headcont #menucont ul li:hover a {color:#a34029;}
+#headcont #contactcont {border:1px solid #a34029;border-bottom:none;background:#144655;padding:20px 23px 33px 23px;color:#b2b4a9;width:271px;height:217px;font-size:14px;text-transform:uppercase;}
+#headcont #contactcont p {margin-bottom:15px;}
+#headcont #contactcont a {color:#b2b4a9;text-decoration:underline;}
+#headcont #contactcont #contactfrmcont p {margin-bottom:5px;}
+#bottext {display:none;}
+#headcont #contactcont #headfrmcont #heademail {width:113px;float:left;border:1px solid #b2b4a9;border-radius:0;height:19px;padding:2px 6px;margin:0;box-shadow:none;font-size:12px;color:#B2B4A9;}
+#headcont #contactcont #headfrmcont #headsubmit {width:90px;float:left;background:#b2b4a9;color:#757575;height:25px;border:1px solid #b2b4a9;text-transform:uppercase;}
+#headcont #contactcont #headfrmcont #headsubmit:hover {color:#A34029;}
+#headcont #contactcont #socialcont p {margin-bottom:5px;}
+#headcont #contactcont #socialcont #facebook, #headcont #contactcont #twitter {float:left;}
+#headcont #contactcont #socialcont a:focus {outline: 0 !important;}
+#headcont #contactcont #socialcont #facebook a {display:block;width:22px;height:22px;text-indent:-9999px;background:url(../img/socialicons.png) 0 0 no-repeat;margin-right:5px;}
+#headcont #contactcont #socialcont #twitter a {display:block;width:22px;height:22px;text-indent:-9999px;background:url(../img/socialicons.png) -23px 0px no-repeat;}
+#headcont #contactcont #socialcont #facebook a:hover {background:url(../img/socialicons.png) 0 -23px no-repeat !important;}
+#headcont #contactcont #socialcont #twitter a:hover {background:url(../img/socialicons.png) -23px -23px no-repeat !important;}
+#bodycont {background:#FFF;}
+#bodycont .span6 {width:640px;margin:0;}
+#bodycont .span3 {width:314px;margin:0;}
+#bodycont #homecontentpic {background:url(../img/homepage_pic.jpg) 0 0 no-repeat;height:455px;border:1px solid #654f3c;border-top:none;}
+#bodycont #homecontentpic #hometitle {float:right;margin-top:50px;background: rgba(255,255,255,0.7);width:350px;padding:23px;text-align:center;}
+#bodycont #homecontentpic #hometitle h1 {font-size:25px;color:#A34029;text-transform:uppercase;margin:0;padding:0;line-height:26px;}
+#bodycont #homecontent {border-right:1px solid #c5c7be;border-bottom:1px solid #c5c7be;padding:14px 18px 0 18px;width:281px;min-height:441px;}
+#bodycont #homecontent p, #bodycont #homecontent li {font-size:14px;line-height:18px;}
+#footercont {margin-top:5px;margin-bottom:20px;}
+#footercont #sitecopy {width:500px;float:left;}
+#footercont #sitecopy p {color:#FFFFFF;text-transform:uppercase;font-size:12px;}
+#footercont #sniffcopy {width:178px;height:28px;float:right;}
+#aboutpghead {height:244px;width:960px;background:url(../img/about_header.jpg) 0 0 no-repeat;}
+#daycaretrainingpghead {height:244px;width:960px;background:url(../img/daycaretraining_header.jpg) 0 0 no-repeat;}
+#linkpghead {height:244px;width:960px;background:url(../img/link_header.jpg) 0 0 no-repeat;}
+#contactpghead {height:244px;width:960px;background:url(../img/contact_header.jpg) 0 0 no-repeat;}
+#groomingpghead {height:244px;width:960px;background:url(../img/grooming_header.jpg) 0 0 no-repeat;}
+#petfoodpghead {height:244px;width:960px;background:url(../img/petfood_header.jpg) 0 0 no-repeat;}
+#registerpghead {height:244px;width:960px;background:url(../img/register_header.jpg) 0 0 no-repeat;}
+#aboutpghead #aboutpgtitle, #daycaretrainingpghead #daycaretrainingpgtitle, #linkpghead #linkpgtitle, #contactpghead #contactpgtitle, #groomingpghead #groomingpgtitle, #petfoodpghead #petfoodpgtitle, #registerpghead #registerpgtitle {background: rgba(255,255,255,0.7);text-align:center;padding:10px;width:120px;margin:0 auto;}
+#aboutpghead #aboutpgtitle h1, #daycaretrainingpghead #daycaretrainingpgtitle h1, #linkpghead #linkpgtitle h1, #contactpghead #contactpgtitle h1, #groomingpghead #groomingpgtitle h1, #petfoodpghead #petfoodpgtitle h1, #registerpghead #registerpgtitle h1 {font-size:25px;color:#A34029;text-transform:uppercase;margin:0;padding:0;line-height:26px;}
+#daycaretrainingpghead #daycaretrainingpgtitle {width:297px;}
+#daycaretrainingpghead #daycaretrainingpgtitle h1 {font-size:20px;}
+#registerpghead #registerpgtitle {width:170px;}
+.pgcontent {border:1px solid #654F3C;padding:20px 30px 10px 30px;}
+.pgcontent h3 {color:#A34029;font-size:16px;line-height:20px;text-transform:uppercase;margin:20px 0 5px 0;}
+.pgcontent h4 {font-size:14px;color:#654F3C;line-height:16px;text-decoration:none;font-weight:bold;}
+.pgcontent h5 {font-size:14px;color:#654F3C;line-height:18px;text-decoration:underline;font-weight:normal;}
+.pgcontent p {font-size:14px;line-height:18px;}
+.pgcontent .topbtn {width:106px;height:22px;background:#B2B4A9;float:right;text-align:center;padding-top:3px;margin-top:20px;position:relative;left:20px;}
+.pgcontent .topbtn a {color:#757575;text-transform:uppercase;font-size:14px;display:block;text-decoration:none;}
+.pgcontent .topbtn:hover a {color:#A34029;}
+.classcontgray {background:#CCCEC6;left: -30px; padding: 0 30px;position: relative;width: 898px;margin-top:20px;}
+.classcont .classcol {width:270px;float:left;margin-right:30px;}
+.classcont .classcollast {width:290px;margin-right:0px;}
+.classcont .classcol p{margin-bottom:20px;}
+.classcont .classcolsml {width:200px;float:left;margin-right:30px;}
+.classcont .classcolsml p {margin-bottom:5px;}
+.training_btn a {width:111px;height:28px;float:left;margin-right:20px;background:url(../img/training_btn.png) 0 0 no-repeat;display:block;text-indent:-9999px;}
+.daycare_btn a {width:165px;height:28px;float:left;background:url(../img/daycare_btn.png) 0 0 no-repeat;display:block;text-indent:-9999px;}
+.formcol {float:left;margin-right:20px;}
+.formcol p {margin-bottom:5px;font-weight:bold;padding-left:3px;}
+.formcol #regname, .formcol #regdayphone, .formcol #regevephone, .formcol #regemail, .formcol #regdogname, .formcol #breed, .formcol #regvet, .formcol #regvacdate, .formcol #regrabies {width:200px;}
+.formcol #regaddress {width:300px;}
+.formcol #regsex, .formcol #regage {width:100px;}
+.formcol #regreferral, .formcol #reggoal, .formcol #regbreedchoice, .formcol #regprevtraining {width:600px;max-width:650px;min-height:70px;}
+#register #regsubmit {width:75px;background:#A34029;color:#FFFFFF;height:25px;text-transform:uppercase;border:none;font-size:16px;padding-top:2px;}
+#register #regsubmit:hover {background:#654F3C !important;}

@@ -1,0 +1,500 @@
+/*******************************
+	Styles for Animal Antics	
+*******************************/
+
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700);
+@import url(../icons/style.css);
+@font-face {
+    font-family: 'market_decoregular';
+    src: url('../fonts/market_deco-webfont.eot');
+    src: url('../fonts/market_deco-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/market_deco-webfont.woff') format('woff'),
+         url('../fonts/market_deco-webfont.ttf') format('truetype'),
+         url('../fonts/market_deco-webfont.svg#market_decoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+img{max-width: 100%; height: auto;}
+
+html{height: 100%;}
+body{
+	padding-top: 1px;
+	background: url(../img/bg.png) repeat fixed;
+	font-family:'market_decoregular', Helvetica, Arial, sans-serif;
+	padding-bottom: 100px;
+	min-height: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family:'market_decoregular', Helvetica, Arial, sans-serif;
+}
+body > .wrapper{
+	width: 100%;
+	max-width: 960px;
+	min-width: 960px;
+	margin: 20px auto 0;
+	position: relative;
+	-webkit-box-shadow: 0 0 5px #888;
+	   -moz-box-shadow: 0 0 5px #888;
+			box-shadow: 0 0 5px #888;
+}
+em{font-style: italic;}
+strong{font-weight: bold;}
+
+#header:after, #content:after, 
+#footer:after, form:after{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.col-1, .col-2, .col-3{
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+.col-1{width: 320px;}
+.col-2{width: 640px;}
+.col-3{width: 960px;}
+
+#content .article .col-1{width: 33.33%;}
+#content .article .col-2{width: 66.66%;}
+#content .article .col-3{width: 99.99%;}
+
+#bottext {display:none !important;}
+
+#content .article .sub-nav li{
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	list-style-type: none;
+	margin: 0 10px 10px 0;
+}
+#content .article .sub-nav li a{
+	display: block;
+	background:#27292b;
+	color:#FFFFFF;
+	text-transform:uppercase;
+	border:none;
+	font-size:16px;
+	padding:5px;
+	text-decoration: none;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
+	-webkit-appearance: none;
+}
+
+.banner img{border-bottom: 5px solid #27292b;}
+
+/*
+ * Global Shit
+ * ============
+ * Header, Content, Footer
+**/
+
+	/*
+	 * Header
+	*/
+	#header{border-bottom: 5px solid #27292b;}
+	#header > *{
+		height: 320px;
+		float: left;
+	}
+
+		/* Logo */
+		#header .logo{background: #fff;}
+		#header .logo a{
+			display: block;
+			width: 94%;
+			margin: 3%;
+		}
+
+		/* Navigation */
+		#header .nav{background: #e8c980;}
+		#header .nav ul{
+			padding: 25px 0;
+		}
+		#header .nav li a{
+			display: block;
+			padding: 5px 25px;
+			font-size: 16px;
+			color: #fff;
+			text-decoration: none;
+		}
+		#header .nav li a:hover{
+			background: #dfbf76;
+		}
+
+		/* Contact Info */
+		#header .contact-info{background: #8092a2;}
+		#header .contact-info > ul{
+			padding: 25px;
+			list-style-type: none;
+		}
+		#header .contact-info > ul > li{
+			color: #27292b;
+			margin-bottom: 20px;
+			font-size: 14px;
+		}
+		#header .contact-info li a{color: #27292b;}
+
+			/* Contact Form */
+			#header .contact-info input{
+				display: block;
+				float: left;
+				margin: 5px 0 0; padding: 5px;
+				border: 0;
+				-webkit-border-radius: 0;
+				   -moz-border-radius: 0;
+				        border-radius: 0;
+				-webkit-appearance: none;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+			}
+			#header .contact-info input#email:focus{text-transform: none;}
+			#header .contact-info input#submit{
+				background: #27292b;
+				color: #fff;
+			}
+
+			/* Socials */
+			#header .contact-info .socials li{
+				display:-moz-inline-stack;
+				display:inline-block;
+				zoom:1;
+				*display:inline;
+				margin-top: 5px;
+			}
+			#header .contact-info .socials li a{
+				font-size: 22px;
+				color: #27292b;
+				text-decoration: none;
+			}
+
+	/*
+	 * Content
+	**/
+	#content{
+		font-family: 'PT Sans', sans-serif;
+		background: #fff;
+	}
+	#content h2, 
+	#content h3, 
+	#content h4, 
+	#content h5, 
+	#content h6{color: #4A5F6E;}
+	#content a{color: #27292b;}
+	#content .article{
+		padding: 20px;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	#content .article > *{
+		margin-bottom: 15px;
+	}
+	#content .article ul li{
+		list-style-type: disc;
+		margin-left: 20px;
+	}
+
+		/* Titles */
+		#content .banner{height: 230px;}
+		#content h1{
+			display: block;
+			padding: 10px 15px;
+			color: #27292b;
+			background: #fff;
+			background: rgba(255,255,255,0.6);
+			font-size: 28px;
+			text-transform: uppercase;
+			position: absolute;
+		}
+		#content h2{font-size: 18px;}
+		#content .tagline{
+			position: absolute;
+			bottom: 5px; right: 0;
+			padding: 5px;
+			color: #27292b;
+			background: #fff;
+			background: rgba(255,255,255,0.6);
+			font-size: 18px;
+		}
+
+			/*
+			 * Page: Home
+			**/
+			.home #content .banner{height: auto;}
+			.home #content h1{
+				padding: 25px;
+				top: 50px; right: 0;
+			}
+
+			/*
+			 * Page: About
+			**/
+			.about #content h1{
+				top: 0; left: 50%;
+				margin: 0 0 0 -79px;
+				opacity: 0;
+			}
+			.about .organizations:after{
+				content: ".";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0;
+			}
+			.about .organizations li{
+				display: block;
+				float: left;
+				text-align: center;
+				width: 134px; height: 134px;
+				padding: 20px;
+				background: #fff;
+				background: rgba(0,0,0,0.1);
+				margin: 0 10px 10px 0;
+			}
+			.about .organizations li a{
+				display: table-cell;
+				width: 134px; height: 134px;
+				vertical-align: middle;
+				text-align: middle;
+			}
+			.about .organizations li img{
+				max-height: 100%;
+				max-width: 134px;
+			}
+
+			/*
+			 * Page: Grooming
+			**/
+			.grooming #content h1{
+				top: 0; left: 50%;
+				margin: 0 0 0 -83px;
+			}
+			.grooming #content .grooming-packages:after,
+			.grooming #content .statements:after{
+				content: ".";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0;
+			}
+			.grooming #content .grooming-packages .package{padding: 0 20px 20px 0;}
+			.grooming #content .grooming-packages .package h3{margin-bottom: 10px;}
+			.grooming #content .statements{
+				margin: 0 -20px;
+				padding: 20px;
+				background: #8092A2;
+				background: rgba(128, 146, 162, 0.5);
+			}
+			.grooming #content .statements .statement > *{padding: 0 15px 15px 0;}
+			.grooming #content .statements h3 span{font-family: 'PT Sans', sans-serif;}
+
+			/*
+			 * Page: Pet Food
+			**/
+			.pet-food #content h1{
+				top: 0; left: 50%;
+				margin: 0 0 0 -83px;
+			}
+			.pet-food #content .food-options:after{
+				content: ".";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0;
+			}
+			.pet-food #content .statements{
+				margin: 0 -20px;
+				padding: 20px;
+				background: #8092A2;
+				background: rgba(128, 146, 162, 0.5);
+			}
+			.pet-food #content .statements > *{padding: 0 15px 15px 0;}
+
+			/*
+			 * Page: Daycare Training
+			**/
+			.daycare-training #content h1{
+				top: 0; left: 50%;
+				margin: 0 0 0 -210px;
+			}
+			.daycare-training #content .training-classes:after{
+				content: ".";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0;
+			}
+			.daycare-training #content .training-class{padding: 0 15px 15px 0;}
+			.daycare-training #content .training-class h3{margin-bottom: 5px;}
+			.daycare-training #content .paypal-info{
+				margin: 0 -20px;
+				padding: 20px;
+				background: #8092A2;
+				background: rgba(128, 146, 162, 0.5);
+				text-align: center;
+			}
+
+			/*
+			 * Page: Daycare
+			**/
+			.daycare #content h1{
+				top: 0; left: 50%;
+				margin: 0 0 0 -126px;
+			}
+
+			/*
+			 * Page: Contact
+			**/
+			.contact #content h1{
+				top: 0; left: 50%;
+				margin: 0 0 0 -77px;
+			}
+
+			/*
+			 * Page: Events
+			**/
+			.events #content h1{
+				top: 0; left: 50%;
+				margin: 0 0 0 -77px;
+			}
+
+			/*
+			 * Page: Registration
+			**/
+			.training #content h1{
+				top: 0; left: 50%;
+				margin: 0 0 0 -74px;
+			}
+			.training .formrow:after{
+				content: ".";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0;
+			}
+			.training #content .formrow .formcol{
+				display:-moz-inline-stack;
+				display:inline-block;
+				zoom:1;
+				*display:inline;
+				margin-right: 20px;
+			}
+			.training #content form label{
+				display: block;
+				font-weight: bold;
+			}
+			.training #content form input,
+			.training #content form textarea{
+				display:inline-block; 
+				height:20px;
+				padding:4px 6px;
+				margin-bottom:10px;
+				font-size:14px;
+				line-height:20px;
+				color:#555555;
+				-webkit-border-radius:4px;
+				   -moz-border-radius:4px;
+						border-radius:4px;
+				vertical-align:middle;
+				background-color:#ffffff;
+				border:1px solid #cccccc;
+				-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
+				   -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
+				    	box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
+				-webkit-transition:border linear .2s, box-shadow linear .2s;
+				   -moz-transition:border linear .2s, box-shadow linear .2s;
+					 -o-transition:border linear .2s, box-shadow linear .2s;
+						transition:border linear .2s, box-shadow linear .2s;
+			}
+			.training #content form input:focus,
+			.training #content form textarea:focus{
+				border-color:rgba(82, 168, 236, 0.8);
+				outline:0;
+				outline:thin dotted \9;
+				-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+				   -moz-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+						box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+			}
+			.training #content form #regsubmit{
+				width:75px; height:25px;
+				background:#A34029;
+				color:#FFFFFF;
+				text-transform:uppercase;
+				border:none;
+				font-size:16px;
+				padding-top:2px;
+				-webkit-border-radius: 0;
+				   -moz-border-radius: 0;
+				        border-radius: 0;
+				-webkit-appearance: none;
+			}
+			.formcol #regname, .formcol #regdayphone, .formcol #regevephone, 
+			.formcol #regemail, .formcol #regdogname, .formcol #breed, 
+			.formcol #regvet, .formcol #regvacdate, .formcol #regrabies {width:200px;}
+			.formcol #regaddress {width:300px;}
+			.formcol #regsex, .formcol #regage {width:100px;}
+			.formcol #regreferral, .formcol #reggoal, 
+			.formcol #regbreedchoice, .formcol #regprevtraining {width:600px;max-width:650px;min-height:70px;}
+
+			/*
+			 * 404
+			**/
+			.four-o-four #content h1{
+				position: static;
+				padding-left: 0;
+			}
+
+
+	/*
+	 * Footer
+	**/
+	#footer{
+		width: 100%;
+		position: absolute;
+		top: 100%;
+		color: #27292b;
+		font-size: 13px;
+	}
+	#footer a{color: #8092a2;}
+	#footer > *{
+		float: left;
+		padding: 10px 0;
+	}
+	#footer .designed-by{float: right;}
+
+	.topbtn{
+		width: 100%;
+		text-align: right;
+		margin: 20px 0 0 !important;
+	}
+	.topbtn #back-to-top{
+		display:-moz-inline-stack;
+		display:inline-block;
+		zoom:1;
+		*display:inline;
+		padding: 5px 7px;
+		background: #27292b;
+		color: #fff;
+		text-transform:uppercase;
+		font-size:14px;
+		text-decoration:none;
+	}
+
+
+

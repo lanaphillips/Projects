@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Registration - Animal Antics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <!--[if lt IE 9 ]><link href="css/iefix.css" rel="stylesheet" media="screen"><![endif]-->
+    </head>
+    <body>
+    <div id="picbg"></div>
+    <div id="pgcont">
+        <div id="headcont" class="row">
+        <div id="logocont" class="span3"><a href="index.html" title="Animal Antics Home"><img src="img/logo.jpg" width="292" height="200" alt="Animal Antics" /></a></div>
+        <div id="menucont" class="span3">
+            <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="daycaretraining.html" title="Doggy Day Care & Training">Doggy Day Care & Training</a></li>
+                <li><a href="grooming.html" title="Grooming">Grooming</a></li>
+                <li><a href="petfood.html" title="Pet Food">Pet Food</a></li>
+                <li><a href="links.html" title="Links">Links</a></li>
+                <li><a href="aboutus.html" title="About Us">About Us</a></li>
+                <li><a href="registration.html" title="Registration">Registration</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </div>
+        <div id="contactcont" class="span3">
+        <p>1964 Rivera Drive, Suite J<br>Mount Pleasant, SC 29464</p>
+        <p>Ph: coming soon<br>
+		<a href="mailto:info@animalanticsllc.com" title="Email Us">info@animalanticsllc.com</a></p>
+        <div id="contactfrmcont">
+        <p>Animal antics newsletter</p>
+        <div id="headfrmcont">
+        <form id="headregister" action="includes/echeader.php" method="post">
+        <input id="bottext" name="text" type="text" maxlength="70" size="47" />
+        <input type="text" id="heademail" name="heademail" value="Your E-Mail Address" onfocus="if (this.value=='Your E-Mail Address') this.value=''" onblur="if(this.value=='') { this.value='Your E-Mail Address'; return false; }">
+        <input type="submit" id="headsubmit" value="Subscribe">
+        <div class="clearfix"></div>
+        </form>
+        </div>
+        </div>
+        <div id="socialcont">
+        <p>Join Us!</p>
+        <div id="socialicons">
+        <div id="facebook"><a href="https://www.facebook.com/pages/Animal-Antics-LLC/357023004391292?ref=ts&fref=ts" target="_blank" title="Like Us on Facebook">Like Animal Antics on Facebook</a></div>
+        <div id="twitter"><a href="https://twitter.com/AnimalAnticsLLC" target="_blank" title="Follow Us on Twitter">Follow Animal Antics on Facebook</a></div>
+        <div class="clearfix"></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div id="bodycont">
+        <div id="registerpghead"><div id="registerpgtitle"><h1>Registration</h1></div></div>
+        <div class="pgcontent">
+        <h3>ANIMAL ANTICS CLASS REGISTRATION</h3>
+        <form id="register" action="includes/ec.php" method="post">
+        <input id="bottext" name="text" type="text" maxlength="70" size="47" />
+        <div class="formrow">
+        <div class="formcol">
+        <p>Name:</p>
+		<input id="regname" name="name" type="text" size="47" />
+        </div>
+        <div class="formcol">
+        <p>Address:</p>
+		<input id="regaddress" name="address" type="text" size="47" />
+        </div>
+        <div class="clearfix"></div>
+        </div>
+        <div class="formrow">
+        <div class="formcol">
+        <p>Daytime Phone Number:</p>
+        <input id="regdayphone" name="dphone" type="text" size="47" />
+        </div>
+        <div class="formcol">
+        <p>Evening Phone Number:</p>
+        <input id="regevephone" name="ephone" type="text" size="47" />
+        </div>
+        <div class="clearfix"></div>
+        </div>
+        <div class="formrow">
+        <div class="formcol">
+        <p>E-mail Address:</p>
+        <input id="regemail" name="email" type="text" size="47" />
+        </div>
+        <div class="clearfix"></div>
+        </div>
+        <div class="formrow">
+        <div class="formcol">
+        <p>Name of Dog:</p>
+        <input id="regdogname" name="dogname" type="text" size="47" />
+        </div>
+        <div class="clearfix"></div>
+        </div>
+        <div class="formrow">
+        <div class="formcol">
+        <p>Breed:</p>
+        <input id="regbreed" name="breed" type="text" size="47" />
+        </div>
+        <div class="formcol">
+        <p>Sex:</p>
+        <input id="regsex" name="sex" type="text" size="47" />
+        </div>
+        <div class="formcol">
+        <p>Age:</p>
+        <input id="regage" name="age" type="text" size="47" />
+        </div>
+        <div class="clearfix"></div>
+        </div>
+        <div class="formrow">
+        <div class="formcol">
+        <p>Veterinary Clinic:</p>
+        <input id="regvet" name="vet" type="text" size="47" />
+        </div>
+        <div class="clearfix"></div>
+        </div>
+        <div class="formrow">
+        <div class="formcol">
+        <p>Vaccination Dates: DHLPP:</p>
+        <input id="regvacdate" name="vacdate" type="text" size="47" />
+        </div>
+        <div class="formcol">
+        <p>Rabies:</p>
+        <input id="regrabies" name="rabies" type="text" size="47" />
+        </div>
+        <div class="clearfix"></div>
+        </div>
+        <div class="formrow">
+        <div class="formcol">
+        <p>How did you hear about our classes?</p>
+        <textarea id="regreferral" name="referral" cols="56"></textarea>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+        <div class="formrow">
+        <div class="formcol">
+        <p>What do you hope to accomplish in this class?</p>
+        <textarea id="reggoal" name="goal" cols="56"></textarea>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+        <div class="formrow">
+        <div class="formcol">
+        <p>Why did you choose this particular dog/breed?</p>
+        <textarea id="regbreedchoice" name="breedchoice" cols="56"></textarea>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+        <div class="formrow">
+        <div class="formcol">
+        <p>Have you done any training with this dog previously?</p>
+        <textarea id="regprevtraining" name="prevtraining" cols="56"></textarea>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+        <p>**You are required to bring proof of vaccination to the first class for your instructor to review.  We do not require the Kennel Cough (Bordatella) vaccination, but you may wish to discuss this with your veterinarian.  If you should choose to have your dog immunized against Bordatella, maximum immunity does not occur until approximately two weeks after vaccination.</p>
+        <input type="submit" id="regsubmit" value="Submit">
+        </form>
+        <div class="topbtn"><a href="#headcont" title="Back to Top">Back to Top</a></div>
+        <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+        <div id="footercont">
+        <div id="sitecopy"><p>All rights reserved 2013 - Animal Antics, LLC - &copy; 2013</p></div>
+        <div id="sniffcopy"><a href="http://sniffdesign.com" target="_blank" title="Pet Web Site Design by Sniff Design Studio"><img src="img/sniffcopyright.png" alt="Pet Web Site Design by Sniff Design Studio" /></a></div>
+        <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
