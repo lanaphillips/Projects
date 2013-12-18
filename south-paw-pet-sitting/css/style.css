@@ -539,6 +539,7 @@ footer a:hover { color: #fff; }
 	/* Bottom */
 	footer .bottom { 
 		position: relative;
+        margin-top: 40px;
 		padding: 10px 0 0;
 		color: #7F7F7F; 
 	}
