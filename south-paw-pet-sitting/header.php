@@ -24,22 +24,28 @@
 	<meta name="keywords" content="<?php echo $metaTags; ?>" />
 	<meta name="google-site-verification" content="" />
 	<meta name="Copyright" content="<?php echo $clientName; ?> <?php echo date("Y"); ?>" />
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="/css/reset.css" />
 	<link rel="stylesheet" href="/css/style.css" />
+	
+	<!-- Windows 8 -->
+	<meta name="application-name" content="" /> 
+	<meta name="msapplication-TileColor" content="" /> 
+	<meta name="msapplication-TileImage" content="" />
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="">
-	<meta name="twitter:site" content="<?php echo $clientName; ?>">
+	<meta name="twitter:site" content="">
 	<meta name="twitter:title" content="<?php echo $title; ?>">
-	<meta name="twitter:description" content="<?php echo $description; ?>">
+	<meta name="twitter:description" content="">
 	<meta name="twitter:url" content="<?php echo $url; ?>">
 
 	<!-- Facebook -->
 	<meta property="og:title" content="<?php echo $title; ?>" />
-	<meta property="og:description" content="<?php echo $description; ?>" />
+	<meta property="og:description" content="" />
 	<meta property="og:url" content="<?php echo $url; ?>" />
 	<meta property="og:image" content="" />
 
