@@ -1,7 +1,7 @@
 <?php 
 
 	/* Please Set Client Name */
-	$clientName = "Client Name";
+	$clientName = "South Paw Pet Sitting";
 
 	/* This is for the titles */
 	$path = $_SERVER["SCRIPT_NAME"];
@@ -10,18 +10,32 @@
 	$fileName = str_replace("_", " ", $filePath);
 	$pageName = ucwords($fileName);
 
-	/* Current Page Title */
-	if ($pageName == ("Index" || "") ) {
-		$title = "Site Name";
+	/* Body Class */
+	if ($filePath == 'index' ) {
+		$bodyClass = 'home';
 	}else{
-		$title = "" . $pageName . ": Site Name";
+		$bodyClass = $filePath;
 	}
 
 	/* Current Page Url */
 	if ($pageName == ("Index" || "") ) {
-		$url="http://" . $_SERVER['HTTP_HOST'];
+		$url = "http://" . $_SERVER['HTTP_HOST'];
 	}else{
-		$url="http://" . $_SERVER['HTTP_HOST'] . "/" . $fileName;
+		$url = "http://" . $_SERVER['HTTP_HOST'] . "/" . $fileName;
 	}
+
+    /* Page Title, Description, Meta */
+    switch($bodyClass){
+        case 'home': 
+            $title = '';
+            $description = '';
+            $metaTags = '';
+            break;
+        default:
+            $title = '';
+            $description = '';
+            $metaTags = '';
+            break;
+    }
 
 ?>

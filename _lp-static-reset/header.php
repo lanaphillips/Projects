@@ -19,11 +19,11 @@
 	<title><?php echo $clientName; ?></title>
 	
 	<!-- Meta -->
-	<meta name="title" content="<?php echo $title ?>" />
-	<meta name="description" content="" />
-	<meta name="author" content="" />
+	<meta name="title" content="<?php echo $title; ?>" />
+	<meta name="description" content="<?php echo $description; ?>" />
+	<meta name="keywords" content="<?php echo $metaTags; ?>" />
 	<meta name="google-site-verification" content="" />
-	<meta name="Copyright" content="Client Name <?php echo date("Y"); ?>" />
+	<meta name="Copyright" content="<?php echo $clientName; ?> <?php echo date("Y"); ?>" />
 	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 

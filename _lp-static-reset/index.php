@@ -2,25 +2,27 @@
 <?php include 'header.php'; ?>
 
 <main id="content" role="main">
+	<div class="main">
 
-	<article>
+		<article>
 		
-		<h1>Article Header</h1>
+			<h1>Article Header</h1>
+			
+			<p>Etiam pretium odio eu mi convallis vitae varius neque pharetra. Nulla vestibulum nisi ut sem cursus sed mattis nisi egestas.</p>
+			
+			<h2>Article Subhead</h2>
+			
+			<p>Vestibulum lacus erat, volutpat vel dignissim at, fringilla ut felis.</p>
 		
-		<p>Etiam pretium odio eu mi convallis vitae varius neque pharetra. Nulla vestibulum nisi ut sem cursus sed mattis nisi egestas.</p>
+		</article>
 		
-		<h2>Article Subhead</h2>
-		
-		<p>Vestibulum lacus erat, volutpat vel dignissim at, fringilla ut felis.</p>
+	</div><!-- .main -->
 	
-	</article>
-	
-	<aside>
+	<aside class="aside">
 	
 		<h2>Sidebar Content</h2>
 	
 	</aside>
-
 </main>
 
 <?php include 'footer.php'; ?>
