@@ -1,7 +1,7 @@
 <?php 
 
 	/* Please Set Client Name */
-	$clientName = "South Paw Pet Sitting";
+	$clientName = "Client Name Here";
 
 	/* This is for the titles */
 	$path = $_SERVER["SCRIPT_NAME"];

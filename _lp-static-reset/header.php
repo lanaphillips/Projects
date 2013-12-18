@@ -40,12 +40,12 @@
 	<meta name="twitter:card" content="">
 	<meta name="twitter:site" content="">
 	<meta name="twitter:title" content="<?php echo $title; ?>">
-	<meta name="twitter:description" content="">
+	<meta name="twitter:description" content="<?php echo $description; ?>">
 	<meta name="twitter:url" content="<?php echo $url; ?>">
 
 	<!-- Facebook -->
 	<meta property="og:title" content="<?php echo $title; ?>" />
-	<meta property="og:description" content="" />
+	<meta property="og:description" content="<?php echo $description; ?>" />
 	<meta property="og:url" content="<?php echo $url; ?>" />
 	<meta property="og:image" content="" />
 
